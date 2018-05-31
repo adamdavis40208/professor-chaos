@@ -1,0 +1,5 @@
+lambda_functions:
+  -
+    function_namez: HelloWorld
+    code_uri: lambda.zip
+    runtime: python3.6

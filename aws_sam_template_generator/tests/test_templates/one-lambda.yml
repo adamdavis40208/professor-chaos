@@ -1,0 +1,6 @@
+lambda_functions:
+  -
+    function_name: HelloWorld
+    handler: HelloWorld.main
+    code_uri: lambda.zip
+    runtime: python3.6

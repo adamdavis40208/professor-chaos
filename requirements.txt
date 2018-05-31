@@ -1,0 +1,6 @@
+invoke
+boto3
+moto
+aws-sam-cli
+PyYAML
+pytest
