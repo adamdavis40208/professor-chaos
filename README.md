@@ -35,8 +35,11 @@ They're written in pytest, and for the translation, do not need to mock anything
 
 #### AWS SAM CLI:
 
-* Output a file to template.yml
-* run `sam local start-api` (requires docker)
+This assumes your lambda file is already zipped, and you have an event_file.json to send to your lambda (could be a file with only `{}` in it)
+
+* Output a file to template.yml (`inv generate-aws-sam-template -i mytest.yml -o template.yml`)
+* run `sam local invoke {Lambda name in template} -e event_file.json` (requires docker)
+
 
 
 ## 2. ECS Task Lambda
